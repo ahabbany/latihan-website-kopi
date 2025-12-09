@@ -1,0 +1,326 @@
+/* ====== RESET DASAR ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== BODY ====== */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f3e8; /* krem lembut */
+  color: #3b2a1a;
+  line-height: 1.6;
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: #3b2008; /* coklat tua */
+  color: white;
+  text-align: center;
+  padding: 25px 0 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* <hl> digunakan dosen sebagai pengganti h1 */
+hl {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #f7f2eb;
+  margin-bottom: 10px;
+}
+
+/* ====== NAVBAR ====== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #4a2b0f;
+  padding: 0px 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #7a4e1a;
+  border-radius: 5px;
+}
+
+/* ====== MAIN CONTENT ====== */
+main {
+  background-color: #fffdf9;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* ====== HEADING ====== */
+h2, h3 {
+  color: #251903;
+  margin-top: 25px;
+}
+
+/* ====== TABLE ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+}
+
+th {
+  background-color: #361e03;
+  color: #ffffff;
+}
+
+td, th {
+  border: 1px solid #bca27b;
+  padding: 10px;
+}
+
+td[colspan="3"] {
+  background-color: #f1efec;
+  font-style: italic;
+}
+
+/* ====== GAMBAR & MEDIA ====== */
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+audio, video {
+  margin-top: 15px;
+}
+
+/* ====== FORM & INPUT ====== */
+form {
+  margin-top: 15px;
+}
+
+input, select, textarea, button {
+  width: 250px;
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #b08b64;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #311a02;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #926f4b;
+}
+
+/* ====== WISHLIST ====== */
+#daftarProduk {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: inline-block;
+  text-align: left;
+}
+
+#daftarProduk li {
+  background-color: #362208;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#daftarProduk li:hover {
+  background-color: #352818;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #3b2008;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+}
+
+/* Styling form */ 
+form { 
+  max-width: 600px; 
+  margin: 0 auto; 
+  background-color: #f4f4f4; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+  text-align: left;
+} 
+ 
+form label { 
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold; 
+  color: #333; 
+} 
+form input[type="checkbox"] {
+  width: auto !important;
+  margin-right: 5px;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form textarea, 
+form select { 
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #bbb; 
+  border-radius: 5px; 
+  margin-bottom: 15px; 
+  font-size: 1rem; 
+} 
+ 
+form input[type="checkbox"] { 
+  margin-right: 5px; 
+} 
+ 
+form button[type="submit"] { 
+  background-color: #532a10; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background 0.3s ease; 
+  display: block;
+  margin: 0 auto;
+} 
+ 
+form button[type="submit"]:hover { 
+  background-color: #75401b; 
+} 
+
+nav {
+  background-color: #532a10; /* coklat muda */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #532a10;
+  box-shadow: 0 2px 5px rgba(50, 30, 10, 0.1);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 80px;
+  width: auto;
+}
+ 
+/* Gambar dengan card */ 
+img { 
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 10px auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+} 
+ 
+/* Card container untuk produk atau galeri */ 
+.card { 
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+  padding: 16px; 
+  margin: 20px auto; 
+  max-width: 600px; 
+  text-align: center; 
+  justify-content: left;
+} 
+.galeri { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; 
+  padding: 20px; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+.galeri { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
+  padding: 20px; 
+} 
+ 
+.card { 
+  flex: 1 1 250px; 
+  max-width: 300px; 
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); 
+  overflow: hidden; 
+  text-align: center; 
+  padding: 10px; 
+} 
+ 
+.card img { 
+  width: 100%; 
+  height: auto; 
+  border-bottom: 1px solid #ddd; 
+} 
+ 
+/* Responsif untuk layar kecil */ 
+@media (max-width: 768px) { 
+  .galeri { 
+    flex-direction: column; 
+    align-items: center; 
+} 
+.card { 
+max-width: 90%; 
+} 
+}
+.error { 
+  color: red; 
+  font-size: 0.8rem; 
+} 
+/* Perbaikan checkbox agar tidak ikut width 250px */
+form input[type="checkbox"] {
+  width: auto !important;
+  margin-right: 5px;
+}
+form label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
